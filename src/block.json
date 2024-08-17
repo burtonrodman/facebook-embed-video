@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "worship-system/facebook-embed-video",
+	"version": "0.1.0",
+	"title": "Embed Facebook Video",
+	"category": "widgets",
+	"description": "Simple block to smooth out the Facebook video embed experience.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "facebook-embed-video",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"attributes": {
+		"videoId": {
+			"type": "string"
+		}
+	}
+}
