@@ -1,0 +1,2 @@
+// verification request
+GET http://localhost:8888/wp-content/plugins/facebook-embed-video/fb-webhooks.php?hub.mode=subscribe&hub.challenge=1158201444&hub.verify_token=meatyhamhock

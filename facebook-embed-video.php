@@ -28,3 +28,14 @@ function create_block_copyright_date_block_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
 add_action( 'init', 'create_block_copyright_date_block_block_init' );
+
+if ( null !== __FILE__ ) {
+    $plugin_directory = plugin_dir_path( __FILE__ );
+
+    if ( null !== $plugin_directory ) {
+        if (is_admin()) {
+            require_once ( $plugin_directory . 'admin/options.php' );
+        } else {
+        }
+    }
+}
